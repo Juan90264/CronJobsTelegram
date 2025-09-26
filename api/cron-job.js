@@ -5,7 +5,7 @@ export default async function (req, res) {
 
   try {
     const response = await fetch("https://telegrambotptwikinews.jp90264.workers.dev/");
-    const data = await response.json();
+    const data = await response.text();
     console.log("Resposta do site externo:", data);
     res.status(200).json({ message: "Tarefa de cron executado com sucesso!" });
   } catch (error) {
