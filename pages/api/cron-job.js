@@ -1,5 +1,7 @@
 // api/cron-job.js
 
+import fetch from 'node-fetch';
+
 export default async function handlr(req, res) {
   console.log("Cron job acionado!");
 
